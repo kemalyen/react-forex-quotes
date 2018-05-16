@@ -1,4 +1,4 @@
-# React Forex Quote Table
+# React Forex Quotes Table
 
  
 This component show you selected or complete quotes of Forex pairs. In this first release I've used 1forge.com rest api.
@@ -14,7 +14,7 @@ Add React Forex Quotes to your project:
 
 To use Forex Quote, import it to your own component.
 
-    import ForexQuotes from 'react-forex-quote';
+    import ForexQuotes from 'react-forex-quotes';
 
 ## Usage
 

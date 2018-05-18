@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import ForexQuotes from "../../lib";
+import constants from "../../lib/constants"
 import "./styles.css";
 
 function Demo() {
@@ -9,7 +10,7 @@ function Demo() {
       <ForexQuotes 
         symbols="EURUSD,GBPJPY,AUDUSD" 
         interval="10000"
-        api_key="VqiSQ7khg3SbYT37dHYogD7KqEckxoz8"
+        api_key='${constants.API_URL}'
         />
     </div>
   );

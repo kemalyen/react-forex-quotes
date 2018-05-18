@@ -18,7 +18,7 @@ describe('Fetch Quote Pair', () => {
 
     const data = [{"symbol":"EURUSD","bid":1.17936,"ask":1.17936,"price":1.17936,"timestamp":1526565096},{"symbol":"GBPJPY","bid":149.359,"ask":149.364,"price":149.3615,"timestamp":1526565096},{"symbol":"AUDUSD","bid":0.75031,"ask":0.75031,"price":0.75031,"timestamp":1526565096}];
     const symbols = "EURUSD,GBPJPY,AUDUSD"
-    const api_key = "VqiSQ7khg3SbYT37dHYogD7KqEckxoz8"
+    const api_key = ""
 
     fetchMock
       .getOnce(`mock_url`, { body: data, headers: { 'content-type': 'application/json' } })
@@ -31,9 +31,7 @@ describe('Fetch Quote Pair', () => {
 
     return store.dispatch(actions.getQuotes(symbols, api_key))
     .then(() => {
-      expect(store.getActions()).toContainKey([{ type: constants.FETCH_QUOTES_REQUEST }])
-      
-      //toEqual(expectedActions)
+      expect(store.getActions()).toEqual(expectedActions)
     })
   })
 })

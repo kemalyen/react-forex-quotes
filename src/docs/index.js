@@ -8,8 +8,8 @@ function Demo() {
     <div>
       <ForexQuotes 
         symbols="EURUSD,GBPJPY,AUDUSD" 
-        interval="1000"
-        api_key="CHANGE_WITH_YOUR_KEY"
+        interval="10000"
+        api_key="VqiSQ7khg3SbYT37dHYogD7KqEckxoz8"
         />
     </div>
   );

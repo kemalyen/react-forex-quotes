@@ -1,3 +1,4 @@
+export const FETCH_QUOTES_REQUEST = 'FETCH_QUOTES_REQUEST'
 export const GET_QUOTES = 'GET_QUOTES'
 export const ERROR_HANDLER = 'ERROR_HANDLER'
 

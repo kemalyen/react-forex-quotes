@@ -3,7 +3,7 @@ import * as actions from '../../src/lib/actions';
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import fetchMock from 'fetch-mock'
- 
+  
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
@@ -17,7 +17,7 @@ describe('Fetch Quote Pair', () => {
 
     const data = [{"symbol":"EURUSD","bid":1.17936,"ask":1.17936,"price":1.17936,"timestamp":1526565096},{"symbol":"GBPJPY","bid":149.359,"ask":149.364,"price":149.3615,"timestamp":1526565096},{"symbol":"AUDUSD","bid":0.75031,"ask":0.75031,"price":0.75031,"timestamp":1526565096}];
     const symbols = "EURUSD,GBPJPY,AUDUSD"
-    const api_key = "VqiSQ7khg3SbYT37dHYogD7KqEckxoz8"
+ 
     fetchMock
       .getOnce(`mock_url`, { body: data, headers: { 'content-type': 'application/json' } })
 
@@ -27,7 +27,7 @@ describe('Fetch Quote Pair', () => {
     ]
     const store = mockStore({ quotes: [] })
 
-    return store.dispatch(actions.getQuotes(symbols, api_key))
+    return store.dispatch(actions.getQuotes(symbols))
     .then(() => {
 
       expect.extend({
@@ -67,8 +67,8 @@ describe('Fetch Quote Pair', () => {
           }
         }
       })      
-      expect(store.getActions()).toContainRequest(expectedActions)
-      expect(store.getActions()).toContainQuotes(expectedActions)
+      expect(store.getActions()).toContainRequest()
+      expect(store.getActions()).toContainQuotes()
     })
   })
 })

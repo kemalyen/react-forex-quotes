@@ -8,7 +8,7 @@ class QuotesComponent extends Component {
   componentDidMount(){
     setInterval(
       () => {
-        this.props.getQuotes(this.props.symbols, this.props.api_key)
+        this.props.getQuotes(this.props.symbols)
       },
       this.props.interval
     )

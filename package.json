@@ -11,7 +11,7 @@
     "docs:prod": "webpack --mode production",
     "test": "jest",
     "test:watch": "npm test -- --watch"
-  },
+  },  
   "keywords": [],
   "license": "MIT",
   "peerDependencies": {

@@ -1,6 +1,11 @@
 # React Forex Quotes Table
 
- 
+
+[![NPM](https://nodei.co/npm/react-forex-quotes.png)](https://nodei.co/npm/react-forex-quotes/)
+[![Build Status](https://travis-ci.org/gazatem/react-forex-quotes.svg?branch=master)](https://travis-ci.org/gazatem/react-forex-quotes)
+
+
+
 This component show you selected or complete quotes of Forex pairs. In this first release I've used 1forge.com rest api.
 
 However I'll add more resource with socket choice.

@@ -5,10 +5,14 @@ import './quote.css'
 
 class QuotesComponent extends Component {
 
+  componentWillMount(){
+    this.props.getQuotes(this.props.symbols, this.props.api_key)
+  }
+
   componentDidMount(){
     setInterval(
       () => {
-        this.props.getQuotes(this.props.symbols)
+        this.props.getQuotes(this.props.symbols, this.props.api_key)
       },
       this.props.interval
     )

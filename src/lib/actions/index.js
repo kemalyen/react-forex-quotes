@@ -21,9 +21,8 @@ function getQuotesFailure(body) {
   }
 }
 
-export function getQuotes(symbols = null) {
-  const api_key = process.env.REACT_APP_API_KEY
-  return dispatch => {
+export function getQuotes(symbols = null, api_key = null) {
+   return dispatch => {
     dispatch(fetchTodosRequest())
     return fetch(`${constants.API_URL}?pairs=${symbols}&api_key=${api_key}`)
       .then(res => res.json())

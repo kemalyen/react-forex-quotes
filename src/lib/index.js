@@ -6,11 +6,14 @@ import Quotes from './QuotesComponent'
 
 class ForexComponent extends Component {
   
+   
+  
+
   render() {
-    const { symbols, interval } = this.props;
+    const { symbols, interval, api_key } = this.props;
     return(
       <Provider store={store}>
-        <Quotes symbols={symbols} interval={interval}/>
+        <Quotes symbols={symbols} interval={interval} api_key={api_key}/>
       </Provider>
     )
   }

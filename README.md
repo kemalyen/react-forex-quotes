@@ -2,7 +2,7 @@
 
 
 [![NPM](https://nodei.co/npm/react-forex-quotes.png)](https://nodei.co/npm/react-forex-quotes/)
-[![Build Status](https://travis-ci.org/gazatem/react-forex-quotes.svg?branch=master)](https://travis-ci.org/gazatem/react-forex-quotes)
+[![Build Status](https://travis-ci.org/gazatem/react-forex-quotes.svg?branch=dev)](https://travis-ci.org/gazatem/react-forex-quotes)
 
 
 

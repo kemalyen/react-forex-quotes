@@ -11,7 +11,7 @@
     "docs:prod": "webpack --mode production",
     "test": "jest",
     "test:watch": "npm test -- --watch"
-  },  
+  },
   "keywords": [],
   "license": "MIT",
   "peerDependencies": {
@@ -30,6 +30,7 @@
     "babel-jest": "^22.4.3",
     "babel-loader": "^8.0.0-beta.0",
     "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
     "concurrently": "^3.5.1",
     "css-loader": "^0.28.11",
     "expect": "^22.4.3",

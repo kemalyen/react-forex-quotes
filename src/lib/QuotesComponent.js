@@ -10,12 +10,17 @@ class QuotesComponent extends Component {
   }
 
   componentDidMount(){
-    setInterval(
+    const getQuotesIntervalId = setInterval(
       () => {
         this.props.getQuotes(this.props.symbols, this.props.api_key)
       },
       this.props.interval
     )
+    this.setState({getQuotesIntervalId:getQuotesIntervalId});
+  }
+  
+  componentWillUnmount: function() {
+   clearInterval(this.state.getQuotesIntervalId);
   }
 
   listQuotes() {

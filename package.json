@@ -1,0 +1,65 @@
+{
+  "name": "react-forex-quotes",
+  "version": "0.1.0",
+  "description": "React component displaying quote pairs from 1Forge",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
+    "lib": "babel src/lib -d lib --copy-files",
+    "lib:watch": "babel src/lib -w -d lib --copy-files",
+    "docs": "webpack-dev-server --mode development",
+    "docs:prod": "webpack --mode production",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.2.0",
+    "react-dom": "^15.3.0 || ^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.47",
+    "@babel/register": "^7.0.0-beta.47",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.11",
+    "expect": "^22.4.3",
+    "fetch-mock": "^6.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^11.10.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-mock-store": "^1.5.1",
+    "regenerator-runtime": "^0.11.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "author": "Kemal Yenilmez <kemalyen@gmail.com>",
+  "homepage": "http://www.gazatem.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gazatem/react-forex-quotes.git"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-fetch": "^2.2.0",
+    "jest-cli": "^22.4.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0"
+  }
+}

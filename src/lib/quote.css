@@ -1,0 +1,31 @@
+.quote {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: antiquewhite;
+    width:100%;
+    padding: 5%;
+}
+
+.quote table {
+    background: #201001
+}
+
+.quote .title{
+    color: aliceblue;
+    font-size: 120%
+}
+
+.quote th {
+    color: aliceblue;
+    font-size: 80%
+}
+
+.quote .change{
+    font-size: 80%
+}
+
+.quote td{
+    padding: 1%;
+    border-bottom: skyblue 1px solid
+}
